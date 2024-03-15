@@ -23,18 +23,20 @@ from django.http import HttpResponse    # import HttpResponse
 def home(request):
     return HttpResponse("Hello, world.")
 
+
 def contact(request):
     return HttpResponse("Contact page.")
+
 
 def about(request):
     return HttpResponse("About page.")
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home), #/home/
-    path('contact/', contact) #/contact/
-    path('about/', about) #/about/
+    path('', home),  # /home/
+    path('contact/', contact),  # /contact/
+    path('about/', about)  # /about/
 
 
 ]
-
