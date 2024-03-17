@@ -17,11 +17,13 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from recipes.views import home
 from django.http import HttpResponse    # import HttpResponse
+
 # http request
 
 
-def home(request):
+def _home(request):
     return HttpResponse("Hello, world.")
 
 
